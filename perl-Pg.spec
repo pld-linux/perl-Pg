@@ -14,13 +14,13 @@ Summary(uk):    â¦ÂÌ¦ÏÔÅËÉ ÔÁ ÍÏÄÕÌ¦ ÄÌÑ ÄÏÓÔÕÐÕ ÄÏ postgresql Ú Perl
 Summary(zh_CN): PostgreSQL µÄ PL/Perl ³ÌÐòÓïÑÔ
 Name:		perl-%{pname}
 Version:	2.0.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://gborg.postgresql.org/pub/pgperl/stable/%{module}-%{version}.tar.gz
 URL:		http://gborg.postgresql.org/project/pgperl/projdisplay.php
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	postgresql-devel
 Requires:	perl >= 5.6
 Obsoletes:	postgresql-perl
@@ -45,7 +45,8 @@ implementacji interfejsu libpq tak blisk±, jak to tylko mo¿liwe.
 %build
 POSTGRES_HOME=%{_prefix}
 export POSTGRES_HOME
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %{?_with_tests:%{__make} test}
@@ -61,8 +62,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%dir %{perl_sitearch}/auto/Pg
-%attr(755,root,root) %{perl_sitearch}/auto/Pg/*.so
-%{perl_sitearch}/auto/Pg/*.bs
-%{perl_sitearch}/*.pm
+%dir %{perl_vendorarch}/auto/Pg
+%attr(755,root,root) %{perl_vendorarch}/auto/Pg/*.so
+%{perl_vendorarch}/auto/Pg/*.bs
+%{perl_vendorarch}/*.pm
 %{_mandir}/man[13]/*
