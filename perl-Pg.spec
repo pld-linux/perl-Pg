@@ -20,7 +20,7 @@ Group:		Development/Languages/Perl
 Source0:	ftp://gborg.postgresql.org/pub/pgperl/stable/%{module}-%{version}.tar.gz
 # Source0-md5:	0813c5ab151dd37ad8938634550e6c1a
 URL:		http://gborg.postgresql.org/project/pgperl/projdisplay.php
-BuildRequires:	perl-devel >= 5.6
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	postgresql-devel
 Obsoletes:	postgresql-perl
