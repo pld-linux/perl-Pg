@@ -44,7 +44,7 @@ implementacji interfejsu libpq tak blisk±, jak to tylko mo¿liwe.
 %build
 POSTGRES_HOME=%{_prefix}
 export POSTGRES_HOME
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %{!?_without_tests:%{__make} test}
