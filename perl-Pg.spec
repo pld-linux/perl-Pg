@@ -3,7 +3,7 @@
 %bcond_with	tests	# perform "make test" - working database connection required
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pname	Pg
+%define		pnam	Pg
 %define		module	pgperl
 Summary:	Perl interface to PostgreSQL database
 Summary(es):	MСdulo Perl para acceder un servidor PostgreSQL
@@ -12,7 +12,7 @@ Summary(pt_BR):	MСdulo Perl para acesso ao servidor PostgreSQL
 Summary(ru):	Библиотеки и модули для доступа к postgresql из perl
 Summary(uk):	Б╕бл╕отеки та модул╕ для доступу до postgresql з Perl
 Summary(zh_CN):	PostgreSQL ╣д PL/Perl ЁлпРсОят
-Name:		perl-%{pname}
+Name:		perl-Pg
 Version:	2.0.2
 Release:	2
 License:	GPL or Artistic
@@ -40,7 +40,7 @@ PostgreSQL-a. W przeciwieЯstwie do DBD::pg, pgperl jest prСb╠
 implementacji interfejsu libpq tak blisk╠, jak to tylko mo©liwe.
 
 %prep
-%setup -q -n %{pname}-%{version}
+%setup -q -n %{pnam}-%{version}
 
 %build
 POSTGRES_HOME=%{_prefix}
