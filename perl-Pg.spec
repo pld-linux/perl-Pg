@@ -18,6 +18,7 @@ Release:	1.1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://gborg.postgresql.org/pub/pgperl/stable/%{module}-%{version}.tar.gz
+# Source0-md5:	0813c5ab151dd37ad8938634550e6c1a
 URL:		http://gborg.postgresql.org/project/pgperl/projdisplay.php
 BuildRequires:	perl >= 5.6
 BuildRequires:	rpm-perlprov >= 4.0.2-104
