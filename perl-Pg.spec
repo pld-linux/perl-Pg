@@ -27,9 +27,15 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This module is an interface between Perl and PostgreSQL. This uses the
-Perl5 API for C extensions to call the PostgreSQL libpq interface. Unlike
-DBD:pg, pgperl tries to implement the libpq interface as closely as
-possible.
+Perl5 API for C extensions to call the PostgreSQL libpq interface.
+Unlike DBD:pg, pgperl tries to implement the libpq interface as
+closely as possible.
+
+%description -l pl
+Ten modu³ jest interfejsem miêdzy Perlem a PostgreSQL-em. U¿ywa API
+Perla 5 dla rozszerzeñ C, aby odwo³ywaæ siê do interfejsu libpq
+PostgreSQL-a. W przeciwieñstwie do DBD::pg, pgperl jest prób±
+implementacji interfejsu libpq tak blisk±, jak to tylko mo¿liwe.
 
 %prep
 %setup -q -n %{pname}-%{version}
