@@ -35,7 +35,7 @@ possible.
 %setup -q -n %{pname}-%{version}
 
 %build
-POSTGRES_HOME=/usr
+POSTGRES_HOME=%{_prefix}
 export POSTGRES_HOME
 perl Makefile.PL
 %{__make}
