@@ -15,7 +15,7 @@ Summary(zh_CN):	PostgreSQL µƒ PL/Perl ≥Ã–Ú”Ô—‘
 Name:		perl-%{pname}
 Version:	2.0.2
 Release:	2
-License:	GPL
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://gborg.postgresql.org/pub/pgperl/stable/%{module}-%{version}.tar.gz
 # Source0-md5:	0813c5ab151dd37ad8938634550e6c1a
@@ -54,7 +54,8 @@ export POSTGRES_HOME
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
