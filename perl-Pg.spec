@@ -9,8 +9,8 @@ Summary:	Perl interface to PostgreSQL database
 Summary(es):	MСdulo Perl para acceder un servidor PostgreSQL
 Summary(pl):	Interfejs dla Perla umo©liwiaj╠cy dostЙp do baz PostgreSQL
 Summary(pt_BR):	MСdulo Perl para acesso ao servidor PostgreSQL
-Summary(ru):	Библиотеки и модули для доступа к postgresql из perl
-Summary(uk):	Б╕бл╕отеки та модул╕ для доступу до postgresql з Perl
+Summary(ru):	Библиотеки и модули для доступа к PostgreSQL из perl
+Summary(uk):	Б╕бл╕отеки та модул╕ для доступу до PostgreSQL з Perl
 Summary(zh_CN):	PostgreSQL ╣д PL/Perl ЁлпРсОят
 Name:		perl-Pg
 Version:	2.0.2
