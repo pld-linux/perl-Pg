@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _with_tests - perform "make test" - working database connection required
+%bcond_with	tests	# perform "make test" - working database connection required
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pname	Pg
@@ -49,7 +49,7 @@ export POSTGRES_HOME
 	INSTALLDIRS=vendor
 %{__make}
 
-%{?_with_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
