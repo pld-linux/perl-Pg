@@ -19,7 +19,7 @@ License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://gborg.postgresql.org/pub/pgperl/stable/%{module}-%{version}.tar.gz
 URL:		http://gborg.postgresql.org/project/pgperl/projdisplay.php
-BuildRequires:	perl >= 5.6
+BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	postgresql-devel
 Requires:	perl >= 5.6
