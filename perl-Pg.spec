@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+# _with_tests - perform "make test" - working database connection required
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pname	Pg
@@ -21,6 +21,7 @@ Source0:	ftp://gborg.postgresql.org/pub/pgperl/stable/%{module}-%{version}.tar.g
 URL:		http://gborg.postgresql.org/project/pgperl/projdisplay.php
 BuildRequires:	perl >= 5.6
 BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	postgresql-devel
 Requires:	perl >= 5.6
 Obsoletes:	postgresql-perl
 BuildArch:	noarch
@@ -47,7 +48,7 @@ export POSTGRES_HOME
 %{__perl} Makefile.PL
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?_with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
