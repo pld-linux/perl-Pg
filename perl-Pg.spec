@@ -14,7 +14,7 @@ Summary(uk):	â¦ÂÌ¦ÏÔÅËÉ ÔÁ ÍÏÄÕÌ¦ ÄÌÑ ÄÏÓÔÕÐÕ ÄÏ postgresql Ú Perl
 Summary(zh_CN):	PostgreSQL µÄ PL/Perl ³ÌÐòÓïÑÔ
 Name:		perl-Pg
 Version:	2.0.2
-Release:	2
+Release:	3
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://gborg.postgresql.org/pub/pgperl/stable/%{module}-%{version}.tar.gz
@@ -24,7 +24,6 @@ BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	postgresql-devel
 Obsoletes:	postgresql-perl
-BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
