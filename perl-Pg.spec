@@ -22,6 +22,7 @@ URL:		http://gborg.postgresql.org/project/pgperl/projdisplay.php
 BuildRequires:	perl >= 5.6
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 Requires:	perl >= 5.6
+Obsoletes:	postgresql-perl
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
