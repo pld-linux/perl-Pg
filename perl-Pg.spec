@@ -14,7 +14,7 @@ Summary(uk):	Б╕бл╕отеки та модул╕ для доступу до PostgreSQL з Perl
 Summary(zh_CN):	PostgreSQL ╣д PL/Perl ЁлпРсОят
 Name:		perl-Pg
 Version:	2.0.2
-Release:	3
+Release:	4
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://gborg.postgresql.org/pub/pgperl/stable/%{module}-%{version}.tar.gz
