@@ -6,12 +6,12 @@
 %define		pnam	Pg
 %define		module	pgperl
 Summary:	Perl interface to PostgreSQL database
-Summary(es):	Módulo Perl para acceder un servidor PostgreSQL
-Summary(pl):	Interfejs dla Perla umo¿liwiaj±cy dostêp do baz PostgreSQL
-Summary(pt_BR):	Módulo Perl para acesso ao servidor PostgreSQL
-Summary(ru):	âÉÂÌÉÏÔÅËÉ É ÍÏÄÕÌÉ ÄÌÑ ÄÏÓÔÕĞÁ Ë PostgreSQL ÉÚ perl
-Summary(uk):	â¦ÂÌ¦ÏÔÅËÉ ÔÁ ÍÏÄÕÌ¦ ÄÌÑ ÄÏÓÔÕĞÕ ÄÏ PostgreSQL Ú Perl
-Summary(zh_CN):	PostgreSQL µÄ PL/Perl ³ÌĞòÓïÑÔ
+Summary(es.UTF-8):   MÃ³dulo Perl para acceder un servidor PostgreSQL
+Summary(pl.UTF-8):   Interfejs dla Perla umoÅ¼liwiajÄ…cy dostÄ™p do baz PostgreSQL
+Summary(pt_BR.UTF-8):   MÃ³dulo Perl para acesso ao servidor PostgreSQL
+Summary(ru.UTF-8):   Ğ‘Ğ¸Ğ±Ğ»Ğ¸Ğ¾Ñ‚ĞµĞºĞ¸ Ğ¸ Ğ¼Ğ¾Ğ´ÑƒĞ»Ğ¸ Ğ´Ğ»Ñ Ğ´Ğ¾ÑÑ‚ÑƒĞ¿Ğ° Ğº PostgreSQL Ğ¸Ğ· perl
+Summary(uk.UTF-8):   Ğ‘Ñ–Ğ±Ğ»Ñ–Ğ¾Ñ‚ĞµĞºĞ¸ Ñ‚Ğ° Ğ¼Ğ¾Ğ´ÑƒĞ»Ñ– Ğ´Ğ»Ñ Ğ´Ğ¾ÑÑ‚ÑƒĞ¿Ñƒ Ğ´Ğ¾ PostgreSQL Ğ· Perl
+Summary(zh_CN.UTF-8):   PostgreSQL çš„ PL/Perl ç¨‹åºè¯­è¨€
 Name:		perl-Pg
 Version:	2.0.2
 Release:	4
@@ -32,11 +32,11 @@ Perl5 API for C extensions to call the PostgreSQL libpq interface.
 Unlike DBD:pg, pgperl tries to implement the libpq interface as
 closely as possible.
 
-%description -l pl
-Ten modu³ jest interfejsem miêdzy Perlem a PostgreSQL-em. U¿ywa API
-Perla 5 dla rozszerzeñ C, aby odwo³ywaæ siê do interfejsu libpq
-PostgreSQL-a. W przeciwieñstwie do DBD::pg, pgperl jest prób±
-implementacji interfejsu libpq tak blisk±, jak to tylko mo¿liwe.
+%description -l pl.UTF-8
+Ten moduÅ‚ jest interfejsem miÄ™dzy Perlem a PostgreSQL-em. UÅ¼ywa API
+Perla 5 dla rozszerzeÅ„ C, aby odwoÅ‚ywaÄ‡ siÄ™ do interfejsu libpq
+PostgreSQL-a. W przeciwieÅ„stwie do DBD::pg, pgperl jest prÃ³bÄ…
+implementacji interfejsu libpq tak bliskÄ…, jak to tylko moÅ¼liwe.
 
 %prep
 %setup -q -n %{pnam}-%{version}
