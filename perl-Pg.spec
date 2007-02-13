@@ -6,12 +6,12 @@
 %define		pnam	Pg
 %define		module	pgperl
 Summary:	Perl interface to PostgreSQL database
-Summary(es.UTF-8):   Módulo Perl para acceder un servidor PostgreSQL
-Summary(pl.UTF-8):   Interfejs dla Perla umożliwiający dostęp do baz PostgreSQL
-Summary(pt_BR.UTF-8):   Módulo Perl para acesso ao servidor PostgreSQL
-Summary(ru.UTF-8):   Библиотеки и модули для доступа к PostgreSQL из perl
-Summary(uk.UTF-8):   Бібліотеки та модулі для доступу до PostgreSQL з Perl
-Summary(zh_CN.UTF-8):   PostgreSQL 的 PL/Perl 程序语言
+Summary(es.UTF-8):	Módulo Perl para acceder un servidor PostgreSQL
+Summary(pl.UTF-8):	Interfejs dla Perla umożliwiający dostęp do baz PostgreSQL
+Summary(pt_BR.UTF-8):	Módulo Perl para acesso ao servidor PostgreSQL
+Summary(ru.UTF-8):	Библиотеки и модули для доступа к PostgreSQL из perl
+Summary(uk.UTF-8):	Бібліотеки та модулі для доступу до PostgreSQL з Perl
+Summary(zh_CN.UTF-8):	PostgreSQL 的 PL/Perl 程序语言
 Name:		perl-Pg
 Version:	2.0.2
 Release:	4
