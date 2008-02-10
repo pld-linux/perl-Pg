@@ -14,7 +14,7 @@ Summary(uk.UTF-8):	Бібліотеки та модулі для доступу 
 Summary(zh_CN.UTF-8):	PostgreSQL 的 PL/Perl 程序语言
 Name:		perl-Pg
 Version:	2.0.2
-Release:	4
+Release:	5
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://gborg.postgresql.org/pub/pgperl/stable/%{module}-%{version}.tar.gz
