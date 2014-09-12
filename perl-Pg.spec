@@ -64,6 +64,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %dir %{perl_vendorarch}/auto/Pg
 %attr(755,root,root) %{perl_vendorarch}/auto/Pg/*.so
-%{perl_vendorarch}/auto/Pg/*.bs
 %{perl_vendorarch}/*.pm
 %{_mandir}/man[13]/*
