@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests	# perform "make test" - working database connection required
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pnam	Pg
 %define		module	pgperl
 Summary:	Perl interface to PostgreSQL database
